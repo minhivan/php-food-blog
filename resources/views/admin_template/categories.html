@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../source/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="../source/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../source/JQuery/jquery.js"></script>
+
+    <title>Admin - Spicy Food</title>
+
+</head>
+<body>
+<div class="food-admin">
+    <!-- Header menu -->
+    <div class="header-menu">
+        <div class="header-menu__home">
+            <a href="#">
+                <i class="icon icon-home"></i>
+                Spicy Food
+            </a>
+        </div>
+        <div class="header-menu__notice">
+            <a href="#">
+                <i class="icon icon-notice"></i>
+                0
+            </a>
+        </div>
+        <div class="header_menu__addnew">
+            <a href="/">
+                <i class="icon icon-addnew"></i>
+                New
+            </a>
+        </div>
+        <div class="header_menu__user">
+            <a href="/">
+                <i class="icon icon-user"></i>
+                Hello, Miizoo
+            </a>
+        </div>
+    </div>
+    <div class="food-wrapper">
+        <!-- left menu food-->
+        <div class="food-left-menu">
+            <ul id="admin_menu">
+                <li class="food-first-item food-menu-item">
+                    <a href="./dashboard.html">
+                        <i class="icon icon-dashboard"></i>
+                        <span class="menu-name">Dashboard</span>
+                    </a>
+                </li>
+                <li class="food-menu-item has-sub-menu  active-menu">
+                    <a href="./all-post.html">
+                        <i class="icon icon-post"></i>
+                        <span class="menu-name">Recipe</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./all-post.html">All recipe</a>
+                        </li>
+                        <li>
+                            <a href="./new-post.html">Add new</a>
+                        </li>
+                        <li class=" active-menu">
+                            <a href="./categories.html">Categories</a>
+                        </li>
+                        <li>
+                            <a href="./tag.html">Tags</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./ingredients.html">
+                        <i class="icon icon-post"></i>
+                        <span class="menu-name">Ingredients</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./ingredients.html">All ingredients</a>
+                        </li>
+                        <li>
+                            <a href="./add-ingredient.html">Add new</a>
+                        </li>
+                        <li>
+                            <a href="">Categories</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./media-libary.html">
+                        <i class="icon icon-photo"></i>
+                        <span class="menu-name">Media</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./media-libary.html">Libary</a>
+                        </li>
+                        <li>
+                            <a href="#">Add new</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./comment.html">
+                        <i class="icon icon-notice"></i>
+                        <span class="menu-name">Comments</span>
+                    </a>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./user.html">
+                        <i class="icon icon-user"></i>
+                        <span class="menu-name">User</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./user.html">All User</a>
+                        </li>
+                        <li>
+                            <a href="./add-user.html">Add new</a>
+                        </li>
+                        <li>
+                            <a href="./user-profile.html">Your Profile</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="#">
+                        <i class="icon icon-setting"></i>
+                        <span class="menu-name">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Content  -->
+        <div class="food-content">
+            <div class="breadcrumb">
+                <a href="./dashboard.html">Spicy Food</a> / <a href="./all-post.html">Recipe</a> / <span>Categories</span>
+            </div>
+            <h1>Categories</h1>
+            <div class="wrap">
+                <div class="post-all">
+                    <div class="post categories">
+                        <form action="" method="post">
+                            <h4>Add new categories</h4>
+                            <fieldset>
+                                <label for="ingre_name">Name</label>
+                                <input type="text" name="ingre_name" id="ingrname" placeholder="Category Name" required>
+                            </fieldset>
+                            <fieldset>
+                                <label for="ingre_description">Description</label>
+                                <input type="text" name="ingre_description" id="ingdescript" placeholder="Description" required>
+                            </fieldset>
+                            <fieldset>
+                                <input type="checkbox" id="sub_cat" name="isSubcat" value="SubCategory">
+                                <label for="vehicle1">Is sub category</label><br>
+                            </fieldset>
+                            <fieldset>
+                                <label for="ingre_cat">Parent Category</label>
+                                <select name="ingre_cat" id="userrole" >
+                                    <option value="1">Ingredient</option>
+                                    <option value="2">Food</option>
+                                    <option value="3">Spice</option>
+                                </select>
+                            </fieldset>
+                            <div class="post__submit">
+                                <button type="submit">Add new</button>
+                            </div>
+                        </form>
+                    </div>
+                    <form action="" method="get" id="post_filter">
+                        <div class="filter-by">
+                            <label for="ingre_cat">Filter by Categories</label>
+                            <select name="ingre_cat" id="">
+                                <option value="1">Cat 1</option>
+                                <option value="2">Cat 2</option>
+                                <option value="3">Cat 3</option>
+                                <option value="4">Cat 4</option>
+                            </select>
+                            <button type="submit">Filter</button>
+                        </div>
+                        <p class="search-box">
+                            <label class="screen-reader-text" for="post-search-input">Search categories</label>
+                            <input type="search" id="post-search-input" name="" value="">
+                            <input type="submit" id="search-submit" class="button" value="Search">
+                        </p>
+                        <div class="tablenav top">
+                            <div class="pagination_links">
+                                <ul class="pagination">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="table-view">
+                            <div class="row-header">
+                                <div class="col-select">
+                                    <input id="cb-select-all-1" type="checkbox">
+                                </div>
+                                <div class="col-title">
+                                    <span>Name</span>
+                                </div>
+                                <div class="col-rcategories">
+                                    <span>Description</span>
+                                </div>
+                                <div class="col-used">
+                                    <span>Count</span>
+                                </div>
+                            </div>
+                            <div class="row-content">
+                                <div class="col-select">
+                                    <input id="12" type="checkbox">
+                                </div>
+                                <div class="col-title">
+                                    <span><a href="#">Popular</a></span>
+                                    <div class="row-content__action">
+                                        <a href="#">Edit</a> | <a href="#" class="color-red">Delete</a> | <a href="#">View</a>
+                                    </div>
+                                </div>
+                                <div class="col-rcategories">
+                                    <span><a href="#">-</a></span>
+                                </div>
+                                <div class="col-used">
+                                    <span>112</span>
+                                </div>
+                            </div>
+                            <div class="row-content">
+                                <div class="col-select">
+                                    <input id="12" type="checkbox">
+                                </div>
+                                <div class="col-title">
+                                    <span><a href="#">Healthy</a></span>
+                                    <div class="row-content__action">
+                                        <a href="#">Edit</a> | <a href="#" class="color-red">Delete</a> | <a href="#">View</a>
+                                    </div>
+                                </div>
+                                <div class="col-rcategories">
+                                    <span><a href="#">-</a></span>
+                                </div>
+                                <div class="col-used">
+                                    <span>112</span>
+                                </div>
+                            </div>
+                            <div class="row-content">
+                                <div class="col-select">
+                                    <input id="12" type="checkbox">
+                                </div>
+                                <div class="col-title">
+                                    <span><a href="#">Popular</a></span>
+                                    <div class="row-content__action">
+                                        <a href="#">Edit</a> | <a href="#" class="color-red">Delete</a> | <a href="#">View</a>
+                                    </div>
+                                </div>
+                                <div class="col-rcategories">
+                                    <span><a href="#">-</a></span>
+                                </div>
+                                <div class="col-used">
+                                    <span>112</span>
+                                </div>
+                            </div>
+                            <div class="row-content">
+                                <div class="col-select">
+                                    <input id="12" type="checkbox">
+                                </div>
+                                <div class="col-title">
+                                    <span><a href="#">Healthy</a></span>
+                                    <div class="row-content__action">
+                                        <a href="#">Edit</a> | <a href="#" class="color-red">Delete</a> | <a href="#">View</a>
+                                    </div>
+                                </div>
+                                <div class="col-rcategories">
+                                    <span><a href="#">-</a></span>
+                                </div>
+                                <div class="col-used">
+                                    <span>112</span>
+                                </div>
+                            </div>
+                            <div class="row-content">
+                                <div class="col-select">
+                                    <input id="12" type="checkbox">
+                                </div>
+                                <div class="col-title">
+                                    <span><a href="#">Popular</a></span>
+                                    <div class="row-content__action">
+                                        <a href="#">Edit</a> | <a href="#" class="color-red">Delete</a> | <a href="#">View</a>
+                                    </div>
+                                </div>
+                                <div class="col-rcategories">
+                                    <span><a href="#">-</a></span>
+                                </div>
+                                <div class="col-used">
+                                    <span>112</span>
+                                </div>
+                            </div>
+                            <div class="row-content">
+                                <div class="col-select">
+                                    <input id="12" type="checkbox">
+                                </div>
+                                <div class="col-title">
+                                    <span><a href="#">Healthy</a></span>
+                                    <div class="row-content__action">
+                                        <a href="#">Edit</a> | <a href="#" class="color-red">Delete</a> | <a href="#">View</a>
+                                    </div>
+                                </div>
+                                <div class="col-rcategories">
+                                    <span><a href="#">-</a></span>
+                                </div>
+                                <div class="col-used">
+                                    <span>112</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tablenav top">
+                            <div class="pagination_links">
+                                <ul class="pagination">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--  Side bar   -->
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="./js/function.js"></script>
+</body>
+</html>

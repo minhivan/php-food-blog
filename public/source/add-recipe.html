@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="./source/Fontawsome/css/fontawesome.css">
+    <link rel="stylesheet" href="./source/Fontawsome/css/brands.css">
+    <link rel="stylesheet" href="./source/Fontawsome/css/solid.css">
+    <!-- // End font awsome -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./source/Bootstrap/css/bootstrap.min.css" type="text/css">
+    <!-- // Bootstrap -->
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="./css/single-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/reponsive.css" type="text/css"> -->
+    <!-- // Css -->
+    <!-- Jquery & Bootstrap -->
+    <script src="./source/JQuery/jquery.js"></script>
+    <script src="./source/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- // Jquery -->
+    <!-- Font google sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- // Font google  -->
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Spicy Food - Teach you delicious cooking</title>
+
+
+</head>
+
+<body>
+<!-- Banner -->
+<div class="container-fluid banner">
+    <div id="banner-bg">
+        <div></div>
+    </div>
+    <div class="header">
+        <div class="header-grid">
+            <!-- Group link and brand for mobile -->
+            <div class="navbar-top col-xs-12">
+                <div class="navbar-header">
+
+                    <!-- Brand and name -->
+                    <div class="navbar-brand logo ">
+                        <h1>
+                            <a href="./index.html">Spicy <span>Food</span></a>
+                        </h1>
+                    </div>
+                    <!-- // End brand and name -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect link form and other content -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./page.html">Popular</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" aria-expanded="true" data-toggle="dropdown">Pages <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="./recipe.html">Recipe</a>
+                                </li>
+                                <li>
+                                    <a href="./recipe.html">Popular</a>
+                                </li>
+                                <li>
+                                    <a href="./recipe.html">Healthy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./save.html">Saves</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // End Collect link-->
+            </div>
+            <!-- // End group -->
+            <div class="header-left">
+                <ul class="left-menu-user">
+                    <li>
+                        <i class="fas fa-search"></i>
+                        <a href="./search.html">Search</a></li>
+                    <li><i class="fas fa-user"></i>
+                        <a href="#" class="dropdown-toggle" aria-expanded="true" data-toggle="dropdown">Sign in</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="./add-recipe.html">Add a recipe</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="main-heading">
+        <h2>Add a recipe</h2>
+    </div>
+
+</div>
+
+<!-- // Banner -->
+<!-- Divide -->
+<div class="divided"></div>
+<div class="add-recipe">
+    <div class="add-recipe__wrapper container">
+        <form action="" method="post" class="form-add-recipe my-form" enctype="multipart/form-data">
+            <fieldset class="recipe-title">
+                <div class="title-data input-field">
+                    <input type="text" name="" id="" class="form-control" placeholder="Recipe Title">
+                </div>
+                <div class="descData input-field">
+                    <textarea class="form-control" placeholder="Recipe Description"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="recipe-categories">
+                <h2>Categories</h2>
+                <div class="new-category input-field">
+                    <input list="browsers" name="browser" placeholder="Ex: Dessert, Pudding, Bruch">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                </div>
+
+            </fieldset>
+            <fieldset class="recipe-more-details">
+                <div class="new-category input-field">
+                    <div id="drop-area">
+                        <h3>Select recipe Image</h3>
+                        <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)" required>
+                        <label class="button" for="fileElem">Select some files</label>
+                        <progress id="progress-bar" max=100 value=0></progress>
+                        <div id="gallery"></div>
+                    </div>
+                    <div class="recipe-amount">
+                        <div id="prepData">
+                        <label class="prep-time-label">Prep Time:</label>
+                        <div class="prep-time">
+                            <input type="number" class="form-control number" placeholder="    ---" data-bind="value:prepTime" id="prepTime" required>
+                            <div class="prep-unit-select">
+                                <select name="" id="prepTimeUnit">
+                                    <option value="1">Minutes</option>
+                                    <option value="2">Hour</option>
+                                    <option value="3">Day</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                        <div id="cookData">
+                            <label class="cook-time-label">Cook Time:</label>
+                            <div class="cook-time">
+                                <input type="number" class="form-control number" placeholder="    ---" data-bind="value:prepTime" id="cookTime">
+                                <div class="prep-unit-select">
+                                    <select name="" id="cookTimeUnit">
+                                        <option value="1">Minutes</option>
+                                        <option value="2">Hour</option>
+                                        <option value="3">Day</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="serveData">
+                            <label class="serve-time-label">Serve</label>
+                            <div class="serve-time">
+                                <input type="number" class="form-control number" placeholder="    ---" data-bind="value:prepTime" id="serveTime">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="recipe-incredients">
+                <h2>Spice</h2>
+                <p>Enter your spice one at a time or paste them into the box below and hit enter.</p>
+                <div class="new-ingredient input-field">
+                    <div class="input_fields_wrap">
+                        <input id="spice_name" type="text" name="spice_name[]" placeholder="Spice 1">
+                        <input id="spice_amount" type="text" name="spice_amount[]" placeholder="Amount">
+                    </div>
+                    <button class="add_field_button button">Add More Step</button>
+                </div>
+
+            </fieldset>
+            <fieldset class="recipe-incredients">
+                <h2>Ingredients</h2>
+                <p>Enter your ingredients one at a time or paste them into the box below and hit enter.</p>
+                <div class="new-ingredient input-field">
+                    <div class="input_fields_wrap">
+                        <input id="ingredients_name" type="text" name="mytext[]" placeholder="Ingredient 1">
+                        <input id="ingredients_amount" type="text" name="amount[]" placeholder="Amount">
+                    </div>
+                    <button class="add_field_button button">Add More Step</button>
+                </div>
+
+            </fieldset>
+            <fieldset class="recipe-steps">
+                <h2>Description</h2>
+                <p>Enter your directions one step at a time or paste them into the box below and hit enter. Don’t worry, we will number them for you.</p>
+                <div class="descData input-field">
+                    <textarea class="form-control" placeholder="Recipe Description"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="recipe-submit">
+                <h2>Save this recipe as</h2>
+                <div class="public-radio">
+                    <input id="isPublicTrue" type="radio" name="rIsPublic" value="true" data-bind="checked: isPublic">
+                    <label for="isPublicTrue">Public</label>
+                </div>
+                <div class="private-radio">
+                    <input id="isPublicFalse" type="radio" name="rIsPublic" value="false" data-bind="checked: isPublic">
+                    <label for="isPublicFalse">Private</label>
+                </div>
+                <p>When you click Save, additional changes cannot be made until your recipe is published.</p>
+                <div class="submitSection">
+                    <button data-bind="enable: valid" id="submitRecipe" value="Save" class="button" ><i></i><span>Save</span></button>
+                    <div class="or-cancel">or <button id="cancelRecipe" class="btn btn-link link">Cancel</button></div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<!-- // End divide -->
+
+<!-- Search -->
+<div class="search">
+    <div class="container">
+        <form action="" method="get">
+            <div class="search-block">
+                <div class="search-label">
+                    <label for="search-field">I WANT TO MAKE
+                    </label>
+                </div>
+                <div class="search-field">
+                    <div class="search-field-input-wrapper">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-field" placeholder="Search here or try our suggestions below">
+                    </div>
+                </div>
+            </div>
+            <ul class="search-tag">
+                <li>top copycat recipes</li>
+                <li>low-cal dinners</li>
+                <li>sheet pan dinners</li>
+                <li>low-cal dinners</li>
+                <li>sheet pan dinners</li>
+            </ul>
+        </form>
+    </div>
+</div>
+<!-- End search -->
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-3 footer-grid">
+                <div class="footer-grid-heading">
+                    <h3><a href="#">Spicy <span>Food</span></a></h3>
+                </div>
+                <div class="footer-info">
+                    <p>Maecenas pharetra scelerisque sem quis commodo. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <div class="footer-grid-heading">
+                    <h4>ADDRESS</h4>
+                </div>
+                <div class="footer-info">
+                    <p>CanTho City
+                        <span>St LeBinh, Kingsport 56777.</span>
+                    </p>
+                    <p class="phone">Phone : +1 123 456 789
+                        <span>Email : <a href="mailto:example@email.com">Minh.pn@spicyfood.vn</a></span>
+                        <span>FAX : 123 456 7890</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <div class="footer-grid-heading">
+                    <h4>Navigation</h4>
+                </div>
+                <div class="footer-info">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="icons.html">Icons</a></li>
+                        <li><a href="codes.html">Short Codes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <div class="footer-grid-heading">
+                    <h4>Facebook Post</h4>
+                </div>
+                <div class="footer-info-fb">
+                    <ul>
+                        <li>Bai post dau tien de test footer facebook <a href="#">http://example.com</a> Test 1
+                            <span><i class="fab fa-facebook-f"></i> 02 days ago</span></li>
+                        <li>Bai post thu hai <a href="#">http://example.com</a><span><i
+                                class="fab fa-facebook-f"></i> 03 days ago</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="copyright">
+            <p>© 2020 Spicy Food . All Rights Reserved | Design by <a href="#"> MinhPham</a> </p>
+        </div>
+    </div>
+</div>
+<!-- //End Footer -->
+
+<!--    <script src="./js/changeSlide.js"></script>-->
+<script src="./assets/js/uploadImage.js"></script>
+<script src="./assets/js/addField.js"></script>
+<!--    <script src="./js/function.js"></script>-->
+<a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span></a>
+<script src="./assets/js/function.js"></script>
+</body>
+</html>

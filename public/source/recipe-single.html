@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="./source/Fontawsome/css/fontawesome.css">
+    <link rel="stylesheet" href="./source/Fontawsome/css/brands.css">
+    <link rel="stylesheet" href="./source/Fontawsome/css/solid.css">
+    <!-- // End font awsome -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./source/Bootstrap/css/bootstrap.min.css" type="text/css">
+    <!-- // Bootstrap -->
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="./css/single-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/reponsive.css" type="text/css"> -->
+    <!-- // Css -->
+    <!-- Jquery & Bootstrap -->
+    <script src="./source/JQuery/jquery.js"></script>
+    <script src="./source/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- // Jquery -->
+    <!-- Font google sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- // Font google  -->
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Spicy Food - Teach you delicious cooking</title>
+
+
+</head>
+
+<body>
+<!-- Banner -->
+<div class="container-fluid banner ">
+    <div id="banner-bg">
+        <div id="setbg"></div>
+    </div>
+    <div class="header no-print">
+        <div class="header-grid">
+            <!-- Group link and brand for mobile -->
+            <div class="navbar-top col-xs-12">
+                <div class="navbar-header">
+
+                    <!-- Brand and name -->
+                    <div class="navbar-brand logo ">
+                        <h1>
+                            <a href="./index.html">Spicy <span>Food</span></a>
+                        </h1>
+                    </div>
+                    <!-- // End brand and name -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect link form and other content -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./page.html">Popular</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" aria-expanded="true" data-toggle="dropdown">Pages <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="./recipe.html">Recipe</a>
+                                </li>
+                                <li>
+                                    <a href="./recipe.html">Popular</a>
+                                </li>
+                                <li>
+                                    <a href="./recipe.html">Healthy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./save.html">Saves</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // End Collect link-->
+            </div>
+            <!-- // End group -->
+            <div class="header-left">
+                <ul class="left-menu-user">
+                    <li>
+                        <i class="fas fa-search"></i>
+                        <a href="./search.html">Search</a></li>
+                    <li><i class="fas fa-user"></i>
+                        <a href="#" class="dropdown-toggle" aria-expanded="true" data-toggle="dropdown">Sign in</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="./add-recipe.html">Add a recipe</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="main-heading">
+        <h2>Recipe Detail</h2>
+    </div>
+</div>
+<!-- // Banner -->
+<!-- Divide -->
+<div class="divided"></div>
+<!-- // End divide -->
+<!-- Recipe -->
+<div class="recipe container ">
+    <div class="breadcum row no-print">
+        <div class="breadcum-holder">
+            <a href="./recipe.html" class="recipe-breadcum-item">
+                <i class="fas fa-backward"></i>
+                <span class="recipe-breadcum__text">
+                        Recipes
+                    </span>
+            </a>
+            <span class="recipe-breadcum__text">/</span>
+            <a href="#" class="recipe-breadcum-item">
+                    <span class="recipe-breadcum__text">
+                        Dessert
+                    </span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Title -->
+    <div class="recipe-title">
+        <h1>Bourbon Chicken</h1>
+    </div>
+    <!-- End title -->
+    <div class="recipe-container">
+        <div class="recipe-left ">
+            <!-- recipe details-->
+            <div class="recipe-layout-details no-print">
+                <div class="recipe-details__avatar ">
+                    <a href="" class="user-avt">
+                        <img src="./content/img/avt/user-1/pasta.png" alt="">
+                    </a>
+                </div>
+                <div class="recipe-details-right ">
+                    <div class="recipe-details__rating">
+                        <div class="recipe-rating">
+                            <div class="star-rating">
+                                <div class="five-star">
+                                    <span class="rating-percent" style="width:55%"></span>(25)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe-details__author">
+                        Recipe by <a href="#">CookinMadam</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- // End recipe details -->
+
+            <!-- Recipe media -->
+            <div class="recipe-layout-media no-print">
+                <div class="recipe-gallery">
+                    <div class="recipe-main-img">
+                        <div class="photo-hero">
+                            <img src="./content/img/post/1.jpg" alt="" id="photo-hero">
+                        </div>
+                    </div>
+                    <div class="photo-gallery">
+                        <div class="recipe-image">
+                            <img src="./content/img/post/2.jpg" alt="" onclick="changeImg(this)">
+                        </div>
+                        <div class="recipe-image">
+                            <img src="./content/img/post/3.jpg" alt="" onclick="changeImg(this)">
+                        </div>
+                        <div class="recipe-image">
+                            <img src="./content/img/post/4.jpg" alt="" onclick="changeImg(this)">
+                        </div>
+                        <div class="recipe-image">
+                            <img src="./content/img/post/1.jpg" alt="" onclick="changeImg(this)">
+                        </div>
+                        <div class="recipe-image">
+                            <img src="./content/img/post/2.jpg" alt="" onclick="changeImg(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // End recipe media -->
+            <!-- Recipe save -->
+            <div class="recipe-layout-save no-print">
+                <div class="recipe-save">
+                    <div class="recipe-save__button">
+                        <i class="fas fa-bookmark"></i>
+                        <span>LƯU CÔNG THỨC</span>
+                    </div>
+                </div>
+            </div>
+            <!-- // End recipe save -->
+
+            <!-- Recipe content left -->
+            <div class="recipe-content__left recipe-layout__truncate col-md-6 col-sm-12">
+                <div class="recipe-layout__fact">
+                    <div class="recipe-facts">
+                        <div class="recipe-facts__info">
+                            <div class="recipe-facts__details recipe-facts__time"><span
+                                    class="recipe-facts__title">THỜI GIAN</span> <span>22 phút</span></div>
+                            <div class="recipe-facts__details recipe-facts__servings"><span
+                                    class="recipe-facts__title">PHỤC VỤ :</span> <a class="theme-color">3-4 </a></div>
+                        </div>
+                        <div class="recipe-facts__info">
+                            <!---->
+                            <div class="recipe-facts__details recipe-facts__units">
+                                <span class="recipe-facts__title">UNITS:</span> <a class="theme-color">US</a>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+
+                <div class="recipe-layout__ingredient">
+                    <div class="recipe-ingredients">
+                        <div class="recipe-ingredients__heading">
+                            <h4 class="recipe-ingredients__title">NGUYÊN LIỆU</h4>
+                        </div>
+                        <ul class="recipe-ingredients__list">
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">1 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> lb
+                                                </span></span><span class="recipe-ingredients__ingredient-part"><a
+                                            href="#">boneless skinless
+                                                    chicken breast</a></span><span
+                                            class="recipe-ingredients__ingredient-part"><span>, cut into 1 inch
+                                                    pieces </span></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">1 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> tablespoon
+                                                </span></span><span class="recipe-ingredients__ingredient-part"><a
+                                            href="#" class="theme-color">cornstarch</a></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">2 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> teaspoons light
+                                                    sesame oil or 2 teaspoons vegetable oil</span></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">3 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> tablespoons
+                                                </span></span><span class="recipe-ingredients__ingredient-part"><a
+                                            href="#">green
+                                                    onions</a></span><span
+                                            class="recipe-ingredients__ingredient-part"><span>, chopped with tops
+                                                </span></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">2 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> </span></span><span
+                                            class="recipe-ingredients__ingredient-part"><a href="#"
+                                                                                           class="theme-color">garlic cloves</a></span><span
+                                            class="recipe-ingredients__ingredient-part"><span>, minced
+                                                </span></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity"><sup>1</sup>⁄<sub>4</sub> -
+                                        1 <sup>1</sup>⁄<sub>2</sub></div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> teaspoon
+                                                </span></span><span class="recipe-ingredients__ingredient-part"><a
+                                            href="#">crushed red
+                                                    pepper flakes</a></span><span
+                                            class="recipe-ingredients__ingredient-part"><span> (to your own
+                                                    taste)</span></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity"><sup>1</sup>⁄<sub>2</sub>
+                                    </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> teaspoon
+                                                </span></span><span class="recipe-ingredients__ingredient-part"><a
+                                            href="#">powdered
+                                                    ginger</a></span><span
+                                            class="recipe-ingredients__ingredient-part"><span> (can use fresh grated
+                                                    if preferred)</span></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">2 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> tablespoons rice wine
+                                                    vinegar</span></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">2 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> tablespoons
+                                                </span></span><span class="recipe-ingredients__ingredient-part"><a
+                                            href="#">soy sauce</a></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">2 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> teaspoons
+                                                </span></span><span class="recipe-ingredients__ingredient-part"><a
+                                            href="#">sugar</a></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity"><sup>1</sup>⁄<sub>3</sub>
+                                    </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> cup dry roasted
+                                                    peanuts</span></span></div>
+                                </div>
+                            </li>
+                            <li class="recipe-ingredients__item">
+                                <!---->
+                                <div class="recipe-ingredients__ingredient">
+                                    <div class="recipe-ingredients__ingredient-quantity">4 </div>
+                                    <div class="recipe-ingredients__ingredient-parts"><span
+                                            class="recipe-ingredients__ingredient-part"><span> cups
+                                                </span></span><span class="recipe-ingredients__ingredient-part"><a
+                                            href="#">cooked
+                                                    rice</a></span><span
+                                            class="recipe-ingredients__ingredient-part"><span>, hot </span></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- // End recipe content left -->
+
+            <!-- Direction -->
+            <div class="recipe-content__right recipe-layout__truncate col-md-6 col-sm-12">
+                <h4 class="recipe-directions__title">HƯỚNG DẪN</h4>
+                <ul class="recipe-directions__steps">
+                    <li class="recipe-directions__step">Remove odd pots and pans from oven.</li>
+                    <li class="recipe-directions__step">Preheat oven to 350º / 180º.</li>
+                    <li class="recipe-directions__step">Cream together butter and sugar.</li>
+                    <li class="recipe-directions__step">Add eggs and crushed bananas.</li>
+                    <li class="recipe-directions__step">Combine well.</li>
+                    <li class="recipe-directions__step">Sift together flour, soda and salt. Add to creamed mixture.
+                        Add
+                        vanilla.</li>
+                    <li class="recipe-directions__step">Mix just until combined. Do not overmix.</li>
+                    <li class="recipe-directions__step">Pour into greased and floured loaf pan.</li>
+                    <li class="recipe-directions__step">Bake at 350º / 180º for 55 minutes.</li>
+                    <li class="recipe-directions__step">Keeps well, refrigerated.</li>
+                </ul>
+
+            </div>
+            <!---->
+            <!-- // End direction -->
+
+            <!-- CONTROLS -->
+            <div class="recipe-layout__controls">
+                <div class="recipe-layout__print-btn">
+                    <div class="recipe-print">
+                        <a onclick="showMore();window.print()">
+                            <i class="fas fa-print"></i>
+                            PRINT RECIPE
+                        </a>
+                    </div>
+                </div>
+                <div class="recipe-layout__show-btn no-print">
+                    <div class="showmore-btn"> <a id="showmore-btn" onclick="showMore()">
+                        <i class="fas fa-caret-down"></i>
+                        SEE FULL RECIPE
+                    </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- // End Controls -->
+
+            <!-- Contribute -->
+            <!-- <div class="recipe-layout__contribute">
+                <div class="recipe-contribute">
+                    <h3 class="recipe-contribute__title">CÔNG THỨC ĐƯỢC LÀM BỞI</h3>
+                    <div class="recipe-contribute__info">
+                        <div class="recipe-contribute__user col-md-3">
+                            <div class="recipe-contribute__avt">
+                                <a href="" class="user-avt contribute-avt">
+                                    <img src="./content/img/avt/user-1/pasta.png" alt="">
+                                </a>
+                            </div>
+                            <div class="recipe-contribute__follow">
+
+                            </div>
+                        </div>
+                        <div class="recipe-contribute__about col-md-9">
+
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End -->
+
+            <!-- Conservation -->
+            <div class="recipe-layout__conservation no-print">
+                <div class="conservation">
+                    <div class="conservation-title">
+                        <h3>THAM GIA GÓP Ý</h3>
+                    </div>
+                    <div class="conservation-action">
+                        <div class="activity-action activity-action--upload" onclick="changeAction(1)">
+                            <i class="fas fa-camera"></i>
+                            <div class="activity-title" >UPLOAD</div>
+                        </div>
+                        <div class="activity-action activity-action--review" onclick="changeAction(2)">
+                            <i class="fas fa-star"></i>
+                            <div class="activity-title">REVIEW</div>
+                        </div>
+                        <div class="activity-action activity-action--edit " onclick="changeAction(3)">
+                            <i class="fas fa-edit"></i>
+                            <div class="activity-title">EDIT</div>
+                        </div>
+                        <div class="activity-action activity-action--ask" onclick="changeAction(4)">
+                            <i class="fas fa-question"></i>
+                            <div class="activity-title">ASK</div>
+                        </div>
+                    </div>
+                    <form action="" id="review-form" method="post" class="review-form active" enctype="multipart/form-data">
+                        <div class="post">
+                            <div class="post__avt">
+                                <a href="#" class="user-avt round-avt">
+                                    <img class="user-avt__img" src="./content/img/avt/user-1/pasta.png">
+                                </a>
+                            </div>
+                            <div class="post__header">
+                                <div class="post__meta">
+                                    <div class="post__author" >
+                                        <span id="post_action">REVIEW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post__text">
+                            <textarea placeholder="Start typing..." id="input_comment"></textarea>
+                        </div>
+                        <div class="upload_image">
+                            <div id="drop-area">
+                                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)" required>
+                                <label class="button" for="fileElem">
+                                    <i class="fas fa-camera"></i>
+                                </label>
+                                <progress id="progress-bar" max=100 value=0></progress>
+                                <div id="gallery"></div>
+                            </div>
+                        </div>
+                        <button type="submit">POST</button>
+                    </form>
+                    <div class="conservation__controls">
+                        <div class="conservation__filters">
+                            <div class="conservation__filter conservation__filter--all conservartion__filter-active">ALL</div>
+                            <div class="conservation__filter conservation__filter--review">REVIEW</div>
+                            <div class="conservation__filter conservation__filter--edit">EDIT</div>
+                            <div class="conservation__filter conservation__filter--ask">QUESTION</div>
+                        </div>
+                        <div class="conservation__sort">
+                            SORT BY:
+                            <select name="" id="" class="conservation__sort-list">
+                                <option value="popular" class="conservation__sort-option">Most Popular</option>
+                                <option value="recent" class="conservation__sort-option">Most Recent</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="conservation__posts">
+                        <ol class="conservation__posts-list">
+                            <li class="conservation__post">
+                                <div class="post">
+                                    <div class="post__avt">
+                                        <a href="#" class="user-avt round-avt">
+                                            <img class="user-avt__img" src="./content/img/avt/user-1/pasta.png">
+                                        </a>
+                                    </div>
+                                    <div class="post__header">
+                                        <div class="post__meta">
+                                            <div class="post__author">
+                                                review by
+                                                <a href="#" class="post__author-link">Test 1</a>
+                                            </div>
+                                            <div class="post__date">
+                                                <span>5/2/2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__rating">
+                                        <div class="stars-rate">
+                                            <div class="stars-rate__template"></div>
+                                            <div class="stars-rate__filter"></div>
+                                        </div>
+                                    </div>
+                                    <div class="post__text">
+                                        <div class="post__text-truncate">
+                                            <span>I have made this cheese cake many times and my family loves it BUT My crust always becomes too hard. Any tips ? Thanks in advance.</span>
+                                        </div>
+                                    </div>
+                                    <div class="post__activity">
+                                        <div class="post__like">
+                                            <div class="recipe-like">
+                                                <a href="#" class="recipe-like__link"><i class="fas fa-thumbs-up"></i>
+                                                    <span>(125) Like</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="post__reply">
+                                            <div class="recipe-reply">
+                                                <a href="#" class="recipe-reply__link">
+                                                    <i class="fas fa-comment"></i>
+                                                    <span>(12) Replies</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conservation__post">
+                                <div class="post">
+                                    <div class="post__avt">
+                                        <a href="#" class="user-avt round-avt">
+                                            <img class="user-avt__img" src="./content/img/avt/user-1/pasta.png">
+                                        </a>
+                                    </div>
+                                    <div class="post__header">
+                                        <div class="post__meta">
+                                            <div class="post__author">
+                                                review by
+                                                <a href="#" class="post__author-link">Test 1</a>
+                                            </div>
+                                            <div class="post__date">
+                                                <span>5/2/2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__rating">
+                                        <div class="stars-rate">
+                                            <div class="stars-rate__template"></div>
+                                            <div class="stars-rate__filter"></div>
+                                        </div>
+                                    </div>
+                                    <div class="post__text">
+                                        <div class="post__text-truncate">
+                                            <span>I have made this cheese cake many times and my family loves it BUT My crust always becomes too hard. Any tips ? Thanks in advance.</span>
+                                        </div>
+                                    </div>
+                                    <div class="post__activity">
+                                        <div class="post__like">
+                                            <div class="recipe-like">
+                                                <a href="#" class="recipe-like__link"><i class="fas fa-thumbs-up"></i>
+                                                    <span>Like</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="post__reply">
+                                            <div class="recipe-reply">
+                                                <a href="#" class="recipe-reply__link">
+                                                    <i class="fas fa-comment"></i>
+                                                    <span>Replies</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conservation__post">
+                                <div class="post">
+                                    <div class="post__avt">
+                                        <a href="#" class="user-avt round-avt">
+                                            <img class="user-avt__img" src="./content/img/avt/user-1/pasta.png">
+                                        </a>
+                                    </div>
+                                    <div class="post__header">
+                                        <div class="post__meta">
+                                            <div class="post__author">
+                                                review by
+                                                <a href="#" class="post__author-link">Test 1</a>
+                                            </div>
+                                            <div class="post__date">
+                                                <span>5/2/2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__rating">
+                                        <div class="stars-rate">
+                                            <div class="stars-rate__template"></div>
+                                            <div class="stars-rate__filter"></div>
+                                        </div>
+                                    </div>
+                                    <div class="post__text">
+                                        <div class="post__text-truncate">
+                                            <span>I have made this cheese cake many times and my family loves it BUT My crust always becomes too hard. Any tips ? Thanks in advance.</span>
+                                        </div>
+                                    </div>
+                                    <div class="post__activity">
+                                        <div class="post__like">
+                                            <div class="recipe-like">
+                                                <a href="#" class="recipe-like__link"><i class="fas fa-thumbs-up"></i>
+                                                    <span>Like</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="post__reply">
+                                            <div class="recipe-reply">
+                                                <a href="#" class="recipe-reply__link">
+                                                    <i class="fas fa-comment"></i>
+                                                    <span>Replies</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conservation__post">
+                                <div class="post">
+                                    <div class="post__avt">
+                                        <a href="#" class="user-avt round-avt">
+                                            <img class="user-avt__img" src="./content/img/avt/user-1/pasta.png">
+                                        </a>
+                                    </div>
+                                    <div class="post__header">
+                                        <div class="post__meta">
+                                            <div class="post__author">
+                                                review by
+                                                <a href="#" class="post__author-link">Test 1</a>
+                                            </div>
+                                            <div class="post__date">
+                                                <span>5/2/2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__rating">
+                                        <div class="stars-rate">
+                                            <div class="stars-rate__template"></div>
+                                            <div class="stars-rate__filter"></div>
+                                        </div>
+                                    </div>
+                                    <div class="post__text">
+                                        <div class="post__text-truncate">
+                                            <span>I have made this cheese cake many times and my family loves it BUT My crust always becomes too hard. Any tips ? Thanks in advance.</span>
+                                        </div>
+                                    </div>
+                                    <div class="post__activity">
+                                        <div class="post__like">
+                                            <div class="recipe-like">
+                                                <a href="#" class="recipe-like__link"><i class="fas fa-thumbs-up"></i>
+                                                    <span>Like</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="post__reply">
+                                            <div class="recipe-reply">
+                                                <a href="#" class="recipe-reply__link">
+                                                    <i class="fas fa-comment"></i>
+                                                    <span>Replies</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conservation__post">
+                                <div class="post">
+                                    <div class="post__avt">
+                                        <a href="#" class="user-avt round-avt">
+                                            <img class="user-avt__img" src="./content/img/avt/user-1/pasta.png">
+                                        </a>
+                                    </div>
+                                    <div class="post__header">
+                                        <div class="post__meta">
+                                            <div class="post__author">
+                                                review by
+                                                <a href="#" class="post__author-link">Test 1</a>
+                                            </div>
+                                            <div class="post__date">
+                                                <span>5/2/2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post__rating">
+                                        <div class="stars-rate">
+                                            <div class="stars-rate__template"></div>
+                                            <div class="stars-rate__filter"></div>
+                                        </div>
+                                    </div>
+                                    <div class="post__text">
+                                        <div class="post__text-truncate">
+                                            <span>I have made this cheese cake many times and my family loves it BUT My crust always becomes too hard. Any tips ? Thanks in advance.</span>
+                                        </div>
+                                    </div>
+                                    <div class="post__activity">
+                                        <div class="post__like">
+                                            <div class="recipe-like">
+                                                <a href="#" class="recipe-like__link"><i class="fas fa-thumbs-up"></i>
+                                                    <span>Like</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="post__reply">
+                                            <div class="recipe-reply">
+                                                <a href="#" class="recipe-reply__link">
+                                                    <i class="fas fa-comment"></i>
+                                                    <span>Replies</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="conservation__show-more">
+                            <span class="conservation__show-more__text">See 124 more</span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advertise -->
+        <div class="recipe-right adv no-print"></div>
+    </div>
+
+    <!-- // End -->
+</div>
+<!-- //End repice -->
+
+<!-- Footer -->
+<div class="footer no-print">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-3 footer-grid">
+                <div class="footer-grid-heading">
+                    <h3><a href="#">Spicy <span>Food</span></a></h3>
+                </div>
+                <div class="footer-info">
+                    <p>Maecenas pharetra scelerisque sem quis commodo. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <div class="footer-grid-heading">
+                    <h4>ADDRESS</h4>
+                </div>
+                <div class="footer-info">
+                    <p>CanTho City
+                        <span>St LeBinh, Kingsport 56777.</span>
+                    </p>
+                    <p class="phone">Phone : +1 123 456 789
+                        <span>Email : <a href="mailto:example@email.com">Minh.pn@spicyfood.vn</a></span>
+                        <span>FAX : 123 456 7890</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <div class="footer-grid-heading">
+                    <h4>Navigation</h4>
+                </div>
+                <div class="footer-info">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="icons.html">Icons</a></li>
+                        <li><a href="codes.html">Short Codes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <div class="footer-grid-heading">
+                    <h4>Facebook Post</h4>
+                </div>
+                <div class="footer-info-fb">
+                    <ul>
+                        <li>Bai post dau tien de test footer facebook <a href="#">http://example.com</a> Test 1
+                            <span><i class="fab fa-facebook-f"></i> 02 days ago</span></li>
+                        <li>Bai post thu hai <a href="#">http://example.com</a><span><i
+                                class="fab fa-facebook-f"></i> 03 days ago</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="copyright">
+            <p>© 2020 Spicy Food . All Rights Reserved | Design by <a href="#"> MinhPham</a> </p>
+        </div>
+    </div>
+</div>
+<!-- //End Footer -->
+
+<!--    <script src="./js/changeSlide.js"></script>-->
+<script type="text/javascript">
+    let formID = document.getElementById('review-form');
+    formID.style.display="none";
+</script>
+<script src="./assets/js/uploadImage.js"></script>
+<!--    <script src="./js/function.js"></script>-->
+<a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span></a>
+<script src="./assets/js/function.js"></script>
+</body>
+</html>

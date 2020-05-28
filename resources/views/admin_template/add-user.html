@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../source/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="../source/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../source/JQuery/jquery.js"></script>
+    <title>Admin - Spicy Food</title>
+
+</head>
+<body>
+<div class="food-admin">
+    <!-- Header menu -->
+    <div class="header-menu">
+        <div class="header-menu__home">
+            <a href="#">
+                <i class="icon icon-home"></i>
+                Spicy Food
+            </a>
+        </div>
+        <div class="header-menu__notice">
+            <a href="#">
+                <i class="icon icon-notice"></i>
+                0
+            </a>
+        </div>
+        <div class="header_menu__addnew">
+            <a href="/">
+                <i class="icon icon-addnew"></i>
+                New
+            </a>
+        </div>
+        <div class="header_menu__user">
+            <a href="/">
+                <i class="icon icon-user"></i>
+                Hello, Miizoo
+            </a>
+        </div>
+    </div>
+    <div class="food-wrapper">
+        <!-- left menu food-->
+        <div class="food-left-menu">
+            <ul id="admin_menu">
+                <li class="food-first-item food-menu-item">
+                    <a href="./dashboard.html">
+                        <i class="icon icon-dashboard"></i>
+                        <span class="menu-name">Dashboard</span>
+                    </a>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="#">
+                        <i class="icon icon-post"></i>
+                        <span class="menu-name">Recipe</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./all-post.html">All recipe</a>
+                        </li>
+                        <li>
+                            <a href="./new-post.html">Add new</a>
+                        </li>
+                        <li>
+                            <a href="#">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#">Tags</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="#">
+                        <i class="icon icon-post"></i>
+                        <span class="menu-name">Ingredients</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./all-post.html">All ingredients</a>
+                        </li>
+                        <li>
+                            <a href="./new-post.html">Add new</a>
+                        </li>
+                        <li>
+                            <a href="#">Categories</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./media-libary.html">
+                        <i class="icon icon-photo"></i>
+                        <span class="menu-name">Media</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">Libary</a>
+                        </li>
+                        <li>
+                            <a href="">Add new</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="#">
+                        <i class="icon icon-notice"></i>
+                        <span class="menu-name">Comments</span>
+                    </a>
+                </li>
+                <li class="food-menu-item has-sub-menu active-menu">
+                    <a href="#">
+                        <i class="icon icon-user"></i>
+                        <span class="menu-name">User</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">All User</a>
+                        </li>
+                        <li class="active-menu">
+                            <a href="">Add new</a>
+                        </li>
+                        <li>
+                            <a href="">Your Profile</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="#">
+                        <i class="icon icon-setting"></i>
+                        <span class="menu-name">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Content  -->
+        <div class="food-content media-wrapper">
+            <h1>Add User</h1>
+            <h5>Create a brand new user and add them to this site.</h5>
+            <div class="wrap">
+                <div class="post">
+                    <form action="" method="post">
+                        <input type="text" name="user_name" id="username" placeholder="Username" required>
+                        <input type="text" name="user_name" id="useremail" placeholder="Email" required>
+                        <input type="text" name="user_name" id="userfname" placeholder="First Name" required>
+                        <input type="text" name="user_name" id="userlname" placeholder="Last Name" required>
+                        <input type="password" name="user_name" id="userpwd" placeholder="Password" required>
+                        <select name="userrole" id="userrole">
+                            <option value="1">Administrator</option>
+                            <option value="2">Editor</option>
+                            <option value="3">Subscriber</option>
+                        </select>
+                        <div class="post__submit">
+                            <button type="submit">Publish</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="./js/function.js"></script>
+</body>
+</html>

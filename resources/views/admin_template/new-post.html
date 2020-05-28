@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="../source/JQuery/jquery.js"></script>
+    <title>Admin - Spicy Food</title>
+
+</head>
+<body>
+<div class="food-admin">
+    <!-- Header menu -->
+    <div class="header-menu">
+        <div class="header-menu__home">
+            <a href="#">
+                <i class="icon icon-home"></i>
+                Spicy Food
+            </a>
+        </div>
+        <div class="header-menu__notice">
+            <a href="#">
+                <i class="icon icon-notice"></i>
+                0
+            </a>
+        </div>
+        <div class="header_menu__addnew">
+            <a href="/">
+                <i class="icon icon-addnew"></i>
+                New
+            </a>
+        </div>
+        <div class="header_menu__user">
+            <a href="/">
+                <i class="icon icon-user"></i>
+                Hello, Miizoo
+            </a>
+        </div>
+    </div>
+    <div class="food-wrapper">
+        <!-- left menu food-->
+        <div class="food-left-menu">
+            <ul id="admin_menu">
+                <li class="food-first-item food-menu-item">
+                    <a href="./dashboard.html">
+                        <i class="icon icon-dashboard"></i>
+                        <span class="menu-name">Dashboard</span>
+                    </a>
+                </li>
+                <li class="food-menu-item has-sub-menu  active-menu">
+                    <a href="./all-post.html">
+                        <i class="icon icon-post"></i>
+                        <span class="menu-name">Recipe</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./all-post.html">All recipe</a>
+                        </li>
+                        <li  class=" active-menu">
+                            <a href="./new-post.html">Add new</a>
+                        </li>
+                        <li>
+                            <a href="./categories.html">Categories</a>
+                        </li>
+                        <li>
+                            <a href="./tag.html">Tags</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./ingredients.html">
+                        <i class="icon icon-post"></i>
+                        <span class="menu-name">Ingredients</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./ingredients.html">All ingredients</a>
+                        </li>
+                        <li>
+                            <a href="./add-ingredient.html">Add new</a>
+                        </li>
+                        <li>
+                            <a href="">Categories</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./media-libary.html">
+                        <i class="icon icon-photo"></i>
+                        <span class="menu-name">Media</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./media-libary.html">Libary</a>
+                        </li>
+                        <li>
+                            <a href="#">Add new</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./comment.html">
+                        <i class="icon icon-notice"></i>
+                        <span class="menu-name">Comments</span>
+                    </a>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="./user.html">
+                        <i class="icon icon-user"></i>
+                        <span class="menu-name">User</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="./user.html">All User</a>
+                        </li>
+                        <li>
+                            <a href="./add-user.html">Add new</a>
+                        </li>
+                        <li>
+                            <a href="./user-profile.html">Your Profile</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="food-menu-item has-sub-menu">
+                    <a href="#">
+                        <i class="icon icon-setting"></i>
+                        <span class="menu-name">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Content  -->
+        <div class="food-content">
+            <div class="breadcrumb">
+                <a href="./dashboard.html">Spicy Food</a> / <a href="./all-post.html">Recipe</a> / <span>Add new</span>
+            </div>
+            <h1>New recipe</h1>
+            <div class="wrap add-recipe">
+                <div class="add-recipe__wrapper container">
+                    <form action="" method="post" class="form-add-recipe my-form" enctype="multipart/form-data">
+                        <fieldset class="recipe-title">
+                            <div class="title-data input-field">
+                                <input type="text" name="" id="" class="form-control" placeholder="Recipe Title">
+                            </div>
+                            <div class="descData input-field">
+                                <textarea class="form-control" placeholder="Recipe Description"></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset class="recipe-categories">
+                            <h2>Categories</h2>
+                            <div class="new-category input-field">
+                                <select name="category" id="category">
+
+                                    <option value=""></option>
+                                </select>
+                            </div>
+
+                        </fieldset>
+                        <fieldset class="recipe-more-details">
+                            <div class="new-category input-field">
+                                <div id="drop-area">
+                                    <h3>Select recipe Image</h3>
+                                    <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)" required>
+                                    <label class="button" for="fileElem">Select some files</label>
+                                    <progress id="progress-bar" max=100 value=0></progress>
+                                    <div id="gallery"></div>
+                                </div>
+                                <div class="recipe-amount">
+                                    <div id="prepData">
+                                        <label class="prep-time-label">Prep Time:</label>
+                                        <div class="prep-time">
+                                            <input type="number" class="form-control number" placeholder="    ---" data-bind="value:prepTime" id="prepTime" required>
+                                            <div class="prep-unit-select">
+                                                <select name="" id="prepTimeUnit">
+                                                    <option value="1">Minutes</option>
+                                                    <option value="2">Hour</option>
+                                                    <option value="3">Day</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="cookData">
+                                        <label class="cook-time-label">Cook Time:</label>
+                                        <div class="cook-time">
+                                            <input type="number" class="form-control number" placeholder="    ---" data-bind="value:prepTime" id="cookTime">
+                                            <div class="prep-unit-select">
+                                                <select name="" id="cookTimeUnit">
+                                                    <option value="1">Minutes</option>
+                                                    <option value="2">Hour</option>
+                                                    <option value="3">Day</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="serveData">
+                                        <label class="serve-time-label">Serve</label>
+                                        <div class="serve-time">
+                                            <input type="number" class="form-control number" placeholder="    ---" data-bind="value:prepTime" id="serveTime">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="recipe-incredients">
+                            <h2>Spice</h2>
+                            <p>Enter your spice one at a time or paste them into the box below and hit enter.</p>
+                            <div class="new-ingredient input-field">
+                                <div class="input_fields_wrap">
+                                    <input id="spice_name" type="text" name="spice_name[]" placeholder="Spice 1">
+                                    <input id="spice_amount" type="text" name="spice_amount[]" placeholder="Amount">
+                                    <input id="spice_unit" type="text" name="spice_unit[]" placeholder="Unit">
+                                </div>
+                                <button class="add_field_button button">Add More Step</button>
+                            </div>
+
+                        </fieldset>
+                        <fieldset class="recipe-incredients">
+                            <h2>Ingredients</h2>
+                            <p>Enter your ingredients one at a time or paste them into the box below and hit enter.</p>
+                            <div class="new-ingredient input-field">
+                                <div class="input_fields_wrap">
+                                    <input id="ingredients_name" type="text" name="mytext[]" placeholder="Ingredient 1">
+                                    <input id="ingredients_amount" type="text" name="amount[]" placeholder="Amount">
+                                </div>
+                                <button class="add_field_button button">Add More Step</button>
+                            </div>
+
+                        </fieldset>
+                        <fieldset class="recipe-steps">
+                            <h2>Description</h2>
+                            <p>Enter your directions one step at a time or paste them into the box below and hit enter. Don’t worry, we will number them for you.</p>
+                            <div class="descData input-field">
+                                <textarea class="form-control" placeholder="Recipe Description"></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset class="recipe-submit">
+                            <h2>Save this recipe as</h2>
+                            <div class="public-radio">
+                                <input id="isPublicTrue" type="radio" name="rIsPublic" value="true" data-bind="checked: isPublic">
+                                <label for="isPublicTrue">Public</label>
+                            </div>
+                            <div class="private-radio">
+                                <input id="isPublicFalse" type="radio" name="rIsPublic" value="false" data-bind="checked: isPublic">
+                                <label for="isPublicFalse">Private</label>
+                            </div>
+                            <p>When you click Save, additional changes cannot be made until your recipe is published.</p>
+                            <div class="submitSection">
+                                <button data-bind="enable: valid" id="submitRecipe" value="Save" class="button" ><i></i><span>Save</span></button>
+                                <div class="or-cancel">or <button id="cancelRecipe" class="button">Cancel</button></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <!--  Side bar   -->
+                <div class="side-bar">
+                    <div class="side-bar__publish">
+                        <h3>Publish</h3>
+
+                        <div class="side-bar__publish-content">
+                            <div class="publish-content__status">
+                                <i class="icon icon-status"></i>
+                                <span>Post on: </span>
+                                <select class="status__choice">
+                                    <option value="1">Draft</option>
+                                    <option value="2">Pending Review</option>
+                                    <option value="3">Publish</option>
+                                </select>
+                            </div>
+                            <div class="publish-content__visibility">
+                                <i class="icon icon-visibility"></i>
+                                <span>Visibility: </span>
+                                <select class="visible__choice">
+                                    <option value="1">Public</option>
+                                    <option value="2">Private</option>
+                                </select>
+                            </div>
+                            <div class="publish-content__date">
+                                <i class="icon icon-date"></i>
+                                <span>Post on</span> <b>Mar 1, 2020 at 19:10</b>
+                                <a href="#">Edit</a>
+                            </div>
+                            <div class="publish-content__edit">
+                                <a href="#">Copy to a new draft</a>
+                                <a href="#">Move to trash</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="./js/function.js"></script>
+<script src="../assets/js/uploadImage.js"></script>
+<script src="../assets/js/addField.js"></script>
+</body>
+</html>
